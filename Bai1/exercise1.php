@@ -4,9 +4,9 @@ function CheckValidString($str){
        $restaurant= "restaurant";
        $book = "book";
 
-       if(strpos($str,$book)=== false || strpos($str,$restaurant) !== false){
+       if(strpos($str,$book)=== false && strpos($str,$restaurant) !== false){
            return true ;
-       }elseif(strpos($str,$restaurant)===false || strpos($str,$book) !== false){
+       }elseif(strpos($str,$restaurant)===false && strpos($str,$book) !== false){
            return true;
        }else{
            return false;
