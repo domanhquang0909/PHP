@@ -29,16 +29,17 @@ function Check(){
     $check2 = CheckValidString($file2);
 
     if($check1 === true){
-        echo "Chuỗi 1 hợp lệ, Chuỗi có " ;
-        echo substr_count($file1,".").' câu</br>';
-    
+        $a= substr_count($file1, ".");
+        echo "Chuỗi 1 hợp lệ, Chuỗi có ".$a." câu</br>";
+        
     }else{
-        echo "Chuỗi không hợp lệ";
+        echo "Chuỗi không hợp lệ</br>";
     }
 
     if($check2 === true){
-        echo "Chuỗi 2 hợp lệ, Chuỗi có ";
-        echo substr_count($file2,".").' câu';
+        $a= substr_count($file2, ".");
+        echo "Chuỗi 2 hợp lệ, Chuỗi có ".$a." câu";
+        
     
     }else{
         echo "Chuỗi không hợp lệ";
